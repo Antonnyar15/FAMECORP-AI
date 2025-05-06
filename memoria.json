@@ -1,0 +1,5 @@
+[
+  {"tipo": "fato", "conteudo": "Usuário gosta de respostas engraçadas"},
+  {"tipo": "preferencia", "conteudo": "Responder sempre em português"},
+  {"tipo": "modificacao", "conteudo": "Código do app.py alterado em 02/05"}
+]
