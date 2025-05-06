@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-window">
+            <div class="header">
+                FAME Chat - IA
+            </div>
+            <div class="chat-box" id="chatBox">
+                <!-- As mensagens aparecerão aqui -->
+            </div>
+
+            <div id="waitingMessage" class="waiting-message" style="display: none;">
+                <span>Aguarde<span id="dots"></span></span>
+            </div>
+
+            <div class="footer">
+                <input type="text" id="userMessage" placeholder="Digite sua mensagem..." onkeypress="handleKeyPress(event)">
+                <button id="sendBtn" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
